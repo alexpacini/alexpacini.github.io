@@ -1,62 +1,77 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<head>
- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
- <meta name="Author" content="Made by 'tree'">
- <meta name="GENERATOR" content="$Version: $ tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro $">
- <title>Directory Tree</title>
- <style type="text/css">
-  <!-- 
-  BODY { font-family : ariel, monospace, sans-serif; }
-  P { font-weight: normal; font-family : ariel, monospace, sans-serif; color: black; background-color: transparent;}
-  B { font-weight: normal; color: black; background-color: transparent;}
-  A:visited { font-weight : normal; text-decoration : none; background-color : transparent; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
-  A:link    { font-weight : normal; text-decoration : none; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
-  A:hover   { color : #000000; font-weight : normal; text-decoration : underline; background-color : yellow; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
-  A:active  { color : #000000; font-weight: normal; background-color : transparent; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
-  .VERSION { font-size: small; font-family : arial, sans-serif; }
-  .NORM  { color: black;  background-color: transparent;}
-  .FIFO  { color: purple; background-color: transparent;}
-  .CHAR  { color: yellow; background-color: transparent;}
-  .DIR   { color: blue;   background-color: transparent;}
-  .BLOCK { color: yellow; background-color: transparent;}
-  .LINK  { color: aqua;   background-color: transparent;}
-  .SOCK  { color: fuchsia;background-color: transparent;}
-  .EXEC  { color: green;  background-color: transparent;}
-  -->
- </style>
-</head>
-<body>
-	<h1>Directory Tree</h1><p>
-	<a href=".">.</a><br>
-	├── <a href="./README.md">README.md</a><br>
-	├── <a href="./StaticContent/">StaticContent</a><br>
-	│   ├── <a href="./StaticContent/CSS/">CSS</a><br>
-	│   │   ├── <a href="./StaticContent/CSS/markDown.css">markDown.css</a><br>
-	│   │   └── <a href="./StaticContent/CSS/markDownMono.css">markDownMono.css</a><br>
-	│   └── <a href="./StaticContent/certs/">certs</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="./StaticContent/certs/CNACAR.pdf">CNACAR.pdf</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="./StaticContent/certs/CTTCSchool2015.pdf">CTTCSchool2015.pdf</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="./StaticContent/certs/ESE2010.pdf">ESE2010.pdf</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="./StaticContent/certs/FAST2010.pdf">FAST2010.pdf</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="./StaticContent/certs/IEEE_MTT_Award.pdf">IEEE_MTT_Award.pdf</a><br>
-	│   &nbsp;&nbsp;&nbsp; ├── <a href="./StaticContent/certs/IntelAward.pdf">IntelAward.pdf</a><br>
-	│   &nbsp;&nbsp;&nbsp; └── <a href="./StaticContent/certs/MITx_8.02.pdf">MITx_8.02.pdf</a><br>
-	├── <a href="./fileIndex.html">fileIndex.html</a><br>
-	└── <a href="./index.html">index.html</a><br>
-	<br><br>
-	</p>
-	<p>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<meta name="Author" content="Made by 'tree'">
+		<meta name="GENERATOR" content="$Version: $ tree v1.5.2.2 (c) 1996 - 2009 by Steve Baker, Thomas Moore, Francesc Rocher, Kyosuke Tokoro $">
+		<title>Directory Tree</title>
+		<style type="text/css">
+			<!-- 
+			BODY { font-family : courier, monospace, sans-serif; }
+			P { font-weight: normal; font-family : courier, monospace, sans-serif; color: black; background-color: transparent;}
+			B { font-weight: normal; color: black; background-color: transparent;}
+			A:visited { font-weight : normal; text-decoration : none; background-color : transparent; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+			A:link    { font-weight : normal; text-decoration : none; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+			A:hover   { color : #000000; font-weight : normal; text-decoration : underline; background-color : yellow; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+			A:active  { color : #000000; font-weight: normal; background-color : transparent; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+			.VERSION { font-size: small; font-family : arial, sans-serif; }
+			.NORM { color: black; background-color: transparent;}
+			.FIFO { color: purple; background-color: transparent;}
+			.CHAR { color: yellow; background-color: transparent;}
+			.DIR  { color: blue; background-color: transparent;}
+			.BLOCK { color: yellow; background-color: transparent;}
+			.LINK { color: aqua; background-color: transparent;}
+			.SOCK { color: fuchsia; background-color: transparent;}
+			.EXEC { color: green; background-color: transparent;}
+			-->
+		</style>
+	</head>
+	<body>
+		<h1>Directory Tree</h1>
+			<p><a href=".">.</a>
 
-3 directories, 12 files
-	<br><br>
-	</p>
-	<hr>
-	<p class="VERSION">
-		 tree v1.7.0 © 1996 - 2014 by Steve Baker and Thomas Moore <br>
-		 HTML output hacked and copyleft © 1998 by Francesc Rocher <br>
-		 JSON output hacked and copyleft © 2014 by Florian Sesser <br>
-		 Charsets / OS/2 support © 2001 by Kyosuke Tokoro
-	</p>
-</body>
+<br>				   |-- <a href="./README.md">README.md</a>
+<br>				   |-- <a href="./StaticContent/">StaticContent</a>
+<br>				   |   |-- <a href="./StaticContent/CSS/">CSS</a>
+<br>				   |   |   |-- <a href="./StaticContent/CSS/markDown.css">markDown.css</a>
+<br>				   |   |   `-- <a href="./StaticContent/CSS/markDownMono.css">markDownMono.css</a>
+<br>				   |   |-- <a href="./StaticContent/certs/">certs</a>
+<br>				   |   |   |-- <a href="./StaticContent/certs/CNACAR.pdf">CNACAR.pdf</a>
+<br>				   |   |   |-- <a href="./StaticContent/certs/CTTCSchool2015.pdf">CTTCSchool2015.pdf</a>
+<br>				   |   |   |-- <a href="./StaticContent/certs/ESE2010.pdf">ESE2010.pdf</a>
+<br>				   |   |   |-- <a href="./StaticContent/certs/FAST2010.pdf">FAST2010.pdf</a>
+<br>				   |   |   |-- <a href="./StaticContent/certs/IEEE_MTT_Award.pdf">IEEE_MTT_Award.pdf</a>
+<br>				   |   |   |-- <a href="./StaticContent/certs/IntelAward.pdf">IntelAward.pdf</a>
+<br>				   |   |   `-- <a href="./StaticContent/certs/MITx_8.02.pdf">MITx_8.02.pdf</a>
+<br>				   |   `-- <a href="./StaticContent/pubList/">pubList</a>
+<br>				   |   &nbsp;&nbsp;&nbsp; |-- <a href="./StaticContent/pubList/AlexPacini.bib">AlexPacini.bib</a>
+<br>				   |   &nbsp;&nbsp;&nbsp; |-- <a href="./StaticContent/pubList/PostPrint/">PostPrint</a>
+<br>				   |   &nbsp;&nbsp;&nbsp; |   |-- <a href="./StaticContent/pubList/PostPrint/2014_07_fall2013_apacini_scholarship_report.pdf">2014_07_fall2013_apacini_scholarship_report.pdf</a>
+<br>				   |   &nbsp;&nbsp;&nbsp; |   |-- <a href="./StaticContent/pubList/PostPrint/2018_06_IMS2018_Philadelphia.pdf">2018_06_IMS2018_Philadelphia.pdf</a>
+<br>				   |   &nbsp;&nbsp;&nbsp; |   |-- <a href="./StaticContent/pubList/PostPrint/2018_06_WPTC_Canada.pdf">2018_06_WPTC_Canada.pdf</a>
+<br>				   |   &nbsp;&nbsp;&nbsp; |   |-- <a href="./StaticContent/pubList/PostPrint/Pacini_2014_EuMW_MDTheoreticalNumericalApproach.pdf">Pacini_2014_EuMW_MDTheoreticalNumericalApproach.pdf</a>
+<br>				   |   &nbsp;&nbsp;&nbsp; |   |-- <a href="./StaticContent/pubList/PostPrint/Pacini_2015_MRF_MDTheoreticalNumericalApproach.pdf">Pacini_2015_MRF_MDTheoreticalNumericalApproach.pdf</a>
+<br>				   |   &nbsp;&nbsp;&nbsp; |   |-- <a href="./StaticContent/pubList/PostPrint/Pacini_2016_EuCAP_MovingWPT.pdf">Pacini_2016_EuCAP_MovingWPT.pdf</a>
+<br>				   |   &nbsp;&nbsp;&nbsp; |   |-- <a href="./StaticContent/pubList/PostPrint/Pacini_2016_IMS_GeometryOptimization.pdf">Pacini_2016_IMS_GeometryOptimization.pdf</a>
+<br>				   |   &nbsp;&nbsp;&nbsp; |   |-- <a href="./StaticContent/pubList/PostPrint/Pacini_2017_IMS_PositionIndependent.pdf">Pacini_2017_IMS_PositionIndependent.pdf</a>
+<br>				   |   &nbsp;&nbsp;&nbsp; |   `-- <a href="./StaticContent/pubList/PostPrint/Pacini_2017_TMTT_LoadandPositionIndependent.pdf">Pacini_2017_TMTT_LoadandPositionIndependent.pdf</a>
+<br>				   |   &nbsp;&nbsp;&nbsp; |-- <a href="./StaticContent/pubList/testbib.pdf">testbib.pdf</a>
+<br>				   |   &nbsp;&nbsp;&nbsp; `-- <a href="./StaticContent/pubList/testbib.tex">testbib.tex</a>
+<br>				   |-- <a href="./fileIndex.html">fileIndex.html</a>
+<br>				   |-- <a href="./index.html">index.html</a>
+<br>				   `-- <a href="./pubs.html">pubs.html</a>
+		<br><br>
+		</p>
+		<p>
+
+5 directories, 25 files
+		<br><br>
+		</p>
+		<hr>
+		<p class="VERSION">
+			 tree v1.5.2.2 (c) 1996 - 2009 by Steve Baker and Thomas Moore <br>
+			 HTML output hacked and copyleft (c) 1998 by Francesc Rocher <br>
+			 Charsets / OS/2 support (c) 2001 by Kyosuke Tokoro
+		</p>
+	</body>
 </html>
