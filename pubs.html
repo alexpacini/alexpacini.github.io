@@ -1,18 +1,23 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml"> 
+<!DOCTYPE html>
+<html lang="en">
   <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" /> 
-    <meta http-equiv="cache-control" content="no-cache" /> 
     <title> 
       Alex Pacini's Publications
     </title>
-    
+	
 	<script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js" type="text/javascript"></script>
-	<script type="text/javascript" src="https://cdn.rawgit.com/pcooksey/bibtex-js/abeec72eb0501d2f6ae41ed4f778b4a60e75984f/src/bibtex_js.js"></script>
+	
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous" async></script> -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous" async></script>
+
+	<script type="text/javascript" src="https://cdn.rawgit.com/pcooksey/bibtex-js/15b6bfdcc87679f7dcf4e157a3dcb8f193d50560/src/bibtex_js.js"></script>
 	<bibtex src="./StaticContent/pubList/AlexPacini.bib"></bibtex>
-      
-    <link href="./StaticContent/CSS/markDown.css" rel="stylesheet">	  
+	
+    <link href="./StaticContent/CSS/markDown.css" rel="stylesheet">	 
+	
     <style>
 		h1 {margin-left:2%; font-size: 32pt}
 	    h1.header {
@@ -23,6 +28,10 @@
 	    h2.header {
 			margin-left:0%;
 			margin-bottom: 5%;
+		}
+		pre {
+			font-size: 9pt;
+			display: inline;
 		}
     </style>
     
@@ -70,12 +79,16 @@
 			<span class="if pages"> pp. <span class="pages"></span>,</span>
 			<span class="if month"><span class="month"></span>,</span>
 			<span class="if year"><span class="year"></span>.</span>
-			<span class="if doi">DOI: <span class="doi"></span>.</span>
-<!-- 			<span class="if doi">
-				<a class="bibtexVar" href="http://dx.doi.org/+DOI+" extra="doi">
-				https://dx.doi.org/<span class="doi"></span>
-				</a>
-			</span> -->
+			<span>
+				<a class="bibtexVar" role="button" data-toggle="collapse" href="#bib+BIBTEXKEY+" 
+				aria-expanded="false" aria-controls="bib+BIBTEXKEY+" extra="BIBTEXKEY">&emsp; [bib] </a>
+			</span>
+			</br><span class="if doi">
+				DOI: <a class="bibtexVar" href="http://dx.doi.org/+DOI+" extra="doi"><span class="doi"></span></a>
+			</span>
+			<div class="bibtexVar collapse" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
+				<pre><span class="bibtexraw noread"></span></pre>
+			</div>
 		<p></li></ul>
 	</div>
 </div>
