@@ -32,11 +32,28 @@
 		pre {
 			font-size: 9pt;
 			display: inline;
+			margin: 0px;
 		}
-		p {
-			 text-align: justify;
+		#bibtex_display p {
+			text-align: justify;
+			margin-bottom: 5px;
+		}
+		.card-body {
+			padding: 0;
+			margin-bottom: 20px;
+		}
+		div.section{
+			margin-bottom: 24px;
 		}
     </style>
+	
+	<script type="text/javascript">
+	$('body').on('click', 'a.showbib', function(){
+		$(this).text(function(i,old){
+			return old=='[\u2193\u00A0bib\u00A0\u2193]' ?  '[\u2191\u00A0bib\u00A0\u2191]' : '[\u2193\u00A0bib\u00A0\u2193]';
+		});
+	});
+	</script>
     
   </head>
 <body>
@@ -83,11 +100,11 @@
 			<span class="if month"><span class="month"></span>,</span>
 			<span class="if year"><span class="year"></span>.</span>
 			<span>
-				<a class="bibtexVar" role="button" data-toggle="collapse" href="#bib+BIBTEXKEY+" 
-				aria-expanded="false" aria-controls="bib+BIBTEXKEY+" extra="BIBTEXKEY">&emsp; [&darr; bib &darr;] </a>
+				&emsp;<a class="bibtexVar showbib" data-toggle="collapse" href="#bib+BIBTEXKEY+" 
+				aria-expanded="false" aria-controls="bib+BIBTEXKEY+" extra="BIBTEXKEY">[&darr;&nbsp;bib&nbsp;&darr;]</a>
 			</span>
 			</br><span class="if doi">
-				DOI: <a class="bibtexVar" href="http://dx.doi.org/+DOI+" extra="doi"><span class="doi"></span></a>
+				&emsp;DOI: <a class="bibtexVar" href="http://dx.doi.org/+DOI+" extra="doi"><span class="doi"></span></a>
 			</span>
 			<div class="bibtexVar collapse" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
 				<div class="card card-body">
