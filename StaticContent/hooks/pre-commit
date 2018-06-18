@@ -1,0 +1,4 @@
+#!/bin/sh
+tree -H . > fileIndex.html
+git add fileIndex.html
+exit 0
