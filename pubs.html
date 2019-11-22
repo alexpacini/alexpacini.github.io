@@ -46,16 +46,6 @@
 			margin-bottom: 24px;
 		}
     </style>
-	
-	<script type="text/javascript">
-	$('body').on('click', 'a.showbib', function(){
-		// The function is called with the eventObject being undefined and using the object the handler was bound to, which is the same eventObject
-		// See https://learn.jquery.com/events/inside-event-handling-function/ and http://api.jquery.com/on/
-		$(this).text(function(i,old){
-			return old=='[\u2193\u00A0bib\u00A0\u2193]' ?  '[\u2191\u00A0bib\u00A0\u2191]' : '[\u2193\u00A0bib\u00A0\u2193]';
-		});
-	});
-	</script>
     
   </head>
 <body>
@@ -110,7 +100,6 @@
 			<span class="if booktitle"><em><span class="booktitle"></span></em>,</span>
 			<span class="if editor"><span class="editor"></span> (editors),</span>
 			<span class="if publisher"><em><span class="publisher"></span></em>,</span>
-			<span class="if !journal number">Technical report <span class="number"></span>,</span>
 			<span class="if institution"><span class="institution"></span>,</span>
 			<span class="if address"><span class="address"></span>,</span>
 			<span class="if volume">vol. <span class="volume"></span>,</span>
