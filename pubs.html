@@ -13,7 +13,7 @@
  	<script async src="https://cdn.jsdelivr.net/npm/popper.js@latest/dist/umd/popper.min.js" crossorigin="anonymous"></script>
 	<script async src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
-	<script type="text/javascript" async src="https://cdn.rawgit.com/pcooksey/bibtex-js/master/src/bibtex_js.js"></script>
+	<script type="text/javascript" async src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@46dd3ce83cb793634b80882cb803b02a9974f106/src/bibtex_js.js"></script>
 	<bibtex src="./StaticContent/pubList/AlexPacini.bib"></bibtex>
 	
     <link href="./StaticContent/CSS/markDown.css" rel="stylesheet">	 
@@ -60,25 +60,25 @@
 
 <div class="bibtex_structure">
 	<div class="sections bibtextypekey">
-		<div class="section @book">
+		<div class="section book">
 			<h1><strong>B</strong>ooks</h1>
 			<div class="sort year" extra="DESC date">
 				<div class="templates"></div>
 			</div>
 		</div>
-		<div class="section @article">
+		<div class="section article">
 			<h1><strong>J</strong>ournal <strong>A</strong>rticles</h1>
 			<div class="sort year" extra="DESC date">
 				<div class="templates"></div>
 			</div>
 		</div>
-		<div class="section @inproceedings">
+		<div class="section inproceedings">
 			<h1><strong>C</strong>onference and <strong>W</strong>orkshop <strong>P</strong>apers</h1>
 			<div class="sort year" extra="DESC date">
 				<div class="templates"></div>
 			</div>
 		</div>
-		<div class="section @misc|@phdthesis|@mastersthesis|@bachelorsthesis|@techreport">
+		<div class="section misc|phdthesis|mastersthesis|bachelorsthesis|techreport">
 			<h1><strong>O</strong>ther <strong>P</strong>ublications</h1>
 			<div class="sort year" extra="DESC date">
 				<div class="templates"></div>
@@ -91,7 +91,7 @@
 	<div class="bibtex_template">
 		<ul><li><p>
 			<span class="if author">
-				<span class="author"></span>,
+				<span class="author"><span class="first_initial"></span> <span class="last"></span></span>,
 			</span>
 			<span class="if title">
 				<a class="url"><strong>"<span class="title"></span></strong>,"</a>
